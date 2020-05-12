@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<a name="The Dingers of MTL"></a>
+		<title>The Dingers of MTL</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style>
+            .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+
+            .sizer{padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 150px;}
+
+            body {min-width:1000px;
+            width: auto !important;
+            width:1000px;
+            background-image:url("static/NHL20_DeluxeBG_4.jpg");
+            background-attachment: fixed;
+            background-position: top center;
+                display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin:0;
+            background-size: cover;
+            }
+            * {box-sizing: border-box}
+            .Gretzky{float: left; width: 650px; height: 1000px; margin-left: -400px}
+            .hello{background-color: white; margin-bottom: 50px;}
+            table{background: white;
+            padding-bottom: 200px;
+            position: center;}
+            caption{color: white;}
+            .logo{margin-left: 370px; height: 500px;}
+            h1{margin-left: 450px; font-family: Impact, Charcoal, sans-serif;font-size: 150px; margin-bottom: -75px; text-align: center;}
+
+
+        </style>
+
+    </head>
+
+	<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="background-image:static/NHL20_DeluxeBG_1.">
+    <a class="navbar-brand" href="main"><img src="static/IMGBIN_2017-18-nhl-season-ice-hockey-sport-logo-png_TSyTuzvc.png" width="100" height="100"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="players">Players</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ranking">Ranking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="purpose">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup2">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="sizer">
+{%  block content %}{% endblock %}
+</div>
+
+
+
+
+
+	</body>
+
+
+
+<footer class="footer-expand bg-dark">
+    <div class="site-footer__league-links-container">
+        <a href="https://www.nhl.com" title="NHL.com">
+            <img class ="center" src="//www-league.nhlstatic.com/images/logos/league-dark/133-com.svg" alt="NHL.com" height="250px" width="250px" ima>
+        </a>
+    </div>
+</footer>
+
+</html>
